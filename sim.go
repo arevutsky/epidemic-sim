@@ -35,7 +35,7 @@ func (c *Cell) setRGB(i int) {
 
 // cell becomes infected
 func (c *Cell) infected() {
-	c.setRGB(0xFFCC99)
+	c.setRGB(0xE74C3C)
 	c.Infected = true
 	c.Incubation = *incubation
 	c.Duration = *duration
@@ -44,7 +44,7 @@ func (c *Cell) infected() {
 
 // cell recovers and gain a level of immunity
 func (c *Cell) recover() {
-	c.setRGB(0x00FF00)
+	c.setRGB(0xA569BD)
 	c.Infected = false
 	c.Incubation = 0
 	c.Duration = 0
@@ -54,7 +54,7 @@ func (c *Cell) recover() {
 
 // cell dies :(
 func (c *Cell) die() {
-	c.setRGB(0)
+	c.setRGB(0x5D6D7E)
 	c.Infected = false
 	c.Duration = 0
 	dead++
@@ -62,7 +62,7 @@ func (c *Cell) die() {
 
 // quarantine the cell
 func (c *Cell) quarantine() {
-	c.setRGB(0x99CCFF)
+	c.setRGB(0x5DADE2)
 	c.Quarantined = true
 }
 

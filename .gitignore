@@ -20,6 +20,8 @@
 .ipynb_checkpoints
 
 .DS_Store
+.idea
+.idea/*
 
 epidemic-sim
 # Dependency directories (remove the comment below to include it)
